@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="text" action="">
+            <label>Amount:</label>
+            <input type="number" name="Amount" id="val_input">
+            <label>From Currency:</label>
+            <select name="fromCur" id="frC_input">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+                <option value="yen">YEN</option>
+            </select>
+            <label>To Currency:</label>
+            <select name="toCur" id="toC_input">
+                <option value="usd">USD</option>
+                <option value="vnd">VND</option>
+                <option value="yen">YEN</option>
+            </select><br><br>
+            <div id="button">
+                <div id="kq">conversion result</div><br>
+                <button type="button" name="convert" id="conv" onclick="solve()">Convert</button>
+            </div>
+    </form>
+    <script src="./main-assignment.js"></script>
+</body>
+</html>

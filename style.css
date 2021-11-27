@@ -1,0 +1,32 @@
+body{
+    background-color: cornflowerblue;
+    place-items: center;
+    min-block-size: 100vh;
+    display: grid;
+}
+.text{
+    background-color: #7165ba;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    padding: 10px;
+    display: inline;
+    max-block-size: 200px;
+}
+button{
+    background-color: rgb(61, 139, 74);
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 16rem;
+}
+button:hover{
+    background-color: darkgreen;
+}
+#kq{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+#button{
+    place-items: center;
+}
