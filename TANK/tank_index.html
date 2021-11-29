@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tank_assignment</title>
+    <link rel="stylesheet" href="./tank_style.css">
+</head>
+<body onload="randBoom()">
+    <div class="setStyle">
+        <img id="tank" src="./img/tank.png">
+        <img id="boom" src="./img/boom.png">
+    </div>
+    <div class="buttons">
+        <button type="button" name="leftButt" id="leftButt" onclick="Move(event)">&larr;</button>
+        <button type="button" name="onButt" id="upButt" onclick="Move(event)">&uarr;</button>
+        <button type="button" name="rightButt" id="rightButt" onclick="Move(event)">&rarr;</button>
+        <button type="button" name="downButt" id="downButt" onclick="Move(event)">&darr;</button>
+    </div>
+    <div id="kq"></div>
+    <script src="./tank_main.js"></script>
+</body>
+</html>
