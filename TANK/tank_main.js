@@ -74,5 +74,6 @@ function Move(event){
                     }
             }
             }
+            break;
     }
 }

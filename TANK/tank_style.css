@@ -1,3 +1,9 @@
+body{
+    background-image: url("./img/poster.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 #tank{
     position: relative;
     top: 0px;
@@ -26,19 +32,35 @@
     position: absolute;
     top: 2.5rem;
     left: 1rem;
+    background-color:gold;
 }
 #rightButt{
     position: absolute;
     top: 2.5rem;
     left: 4.5rem;
+    background-color:gold;
 }
 #upButt{
     position: absolute;
     top: 1rem;
     left: 3rem;
+    background-color:gold;
 }
 #downButt{
     position: absolute;
     top: 4rem;
     left: 3rem;
+    background-color:gold;
+}
+#leftButt:hover{
+    background-color:rgb(189, 165, 30);
+}
+#rightButt:hover{
+    background-color: rgb(189, 165, 30);
+}
+#upButt:hover{
+    background-color: rgb(189, 165, 30);
+}
+#downButt:hover{
+    background-color: rgb(189, 165, 30);
 }
