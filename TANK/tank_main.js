@@ -7,15 +7,15 @@ function randBoom(){    /* lay gia tri ngau nhien cho toa do cua Boom */
     boom.style.top = topBoom + "px";    
     boom.style.left = leftBoom + "px";
 }
-function Position(ele){ /* lay gia tri toa do hien tai cua Element (tank hoac boom) */
+function Position(ele){ /* tao ham de lay vi tri hien tai */
     return{
         left: ele.offsetLeft,
         top: ele.offsetTop
     }
 }
 function Move(event){
-    let curPosition = Position(tank);
-    let boomPosition = Position(boom);
+    let curPosition = Position(tank);   /* su dung ham vua tao de lay vi tri cho tank */
+    let boomPosition = Position(boom);  /* su dung ham vua tao de lay vi tri cho boom */
 
     switch(event.target.id){
         case "leftButt":
