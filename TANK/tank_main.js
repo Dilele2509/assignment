@@ -2,8 +2,8 @@ const tank = document.getElementById("tank");
 const boom = document.getElementById("boom");
 
 function randBoom(){    /* lay gia tri ngau nhien cho toa do cua Boom */
-    let topBoom = Math.floor(Math.random()*(180 - 9));
-    let leftBoom = Math.floor(Math.random()*(180 - 9));
+    let topBoom = Math.floor(Math.random()*(161 - 9)+9);
+    let leftBoom = Math.floor(Math.random()*(161 - 9)+9);
     boom.style.top = topBoom + "px";    
     boom.style.left = leftBoom + "px";
 }
@@ -53,7 +53,7 @@ function Move(event){
             if(curPosition.top > 9){
                 tank.style.top = curPosition.top - 28 + "px";
                 console.log(curPosition.top-19);
-                if(curPosition.top - 28 > boomPosition.top){
+                if(curPosition.top - 19 > boomPosition.top){
                     if((curPosition.left >= (boomPosition.left - 19)) && (curPosition.left <= (boomPosition.left + 19))){
                         tank.src = "./img/explosion.png";
                         alert("GAME OVER!");
